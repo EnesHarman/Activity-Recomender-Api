@@ -1,0 +1,532 @@
+2021-08-28T11:20:33.9219690+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-08-28T11:20:33.9358999+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-08-28T11:20:33.9383214+03:00  [INF] Content root path: "C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi" (b5d60022)
+2021-08-28T11:21:11.4131937+03:00 80000007-0000-fd00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Core.Middlewares.ErrorHandling.BusinessException: The Year value can not be empty.
+   at Business.Validation.EntityValidator.Validate(Book book) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Business\Validation\EntityValidator.cs:line 29
+   at Business.Concrete.BookManager.AddBook(Book book) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Business\Concrete\BookManager.cs:line 28
+   at WebApi.Controllers.BookController.Add(Book book) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi\Controllers\BookController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Core.Middlewares.GlobalErrorHandlingMiddleware.Invoke(HttpContext context) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Core\Middlewares\ErrorHandling\GlobalErrorHandlingMiddleware.cs:line 26
+   at Core.Middlewares.GlobalErrorHandlingMiddleware.Invoke(HttpContext context) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Core\Middlewares\ErrorHandling\GlobalErrorHandlingMiddleware.cs:line 52
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-08-28T11:21:11.4180748+03:00 80000007-0000-fd00-b63f-84710c7967bb [WRN] The response has already started, the error page middleware will not be executed. (e1dd4c0d)
+2021-08-28T11:21:11.4384122+03:00 80000007-0000-fd00-b63f-84710c7967bb [ERR] Connection ID ""18230571293206380549"", Request ID ""80000007-0000-fd00-b63f-84710c7967bb"": An unhandled exception was thrown by the application. (bf316047)
+Core.Middlewares.ErrorHandling.BusinessException: The Year value can not be empty.
+   at Business.Validation.EntityValidator.Validate(Book book) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Business\Validation\EntityValidator.cs:line 29
+   at Business.Concrete.BookManager.AddBook(Book book) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Business\Concrete\BookManager.cs:line 28
+   at WebApi.Controllers.BookController.Add(Book book) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi\Controllers\BookController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Core.Middlewares.GlobalErrorHandlingMiddleware.Invoke(HttpContext context) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Core\Middlewares\ErrorHandling\GlobalErrorHandlingMiddleware.cs:line 26
+   at Core.Middlewares.GlobalErrorHandlingMiddleware.Invoke(HttpContext context) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Core\Middlewares\ErrorHandling\GlobalErrorHandlingMiddleware.cs:line 52
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2021-08-28T11:21:13.1920064+03:00 80000009-0000-fd00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Core.Middlewares.ErrorHandling.BusinessException: The Year value can not be empty.
+   at Business.Validation.EntityValidator.Validate(Book book) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Business\Validation\EntityValidator.cs:line 29
+   at Business.Concrete.BookManager.AddBook(Book book) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Business\Concrete\BookManager.cs:line 28
+   at WebApi.Controllers.BookController.Add(Book book) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi\Controllers\BookController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Core.Middlewares.GlobalErrorHandlingMiddleware.Invoke(HttpContext context) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Core\Middlewares\ErrorHandling\GlobalErrorHandlingMiddleware.cs:line 26
+   at Core.Middlewares.GlobalErrorHandlingMiddleware.Invoke(HttpContext context) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Core\Middlewares\ErrorHandling\GlobalErrorHandlingMiddleware.cs:line 52
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-08-28T11:21:13.1965194+03:00 80000009-0000-fd00-b63f-84710c7967bb [WRN] The response has already started, the error page middleware will not be executed. (e1dd4c0d)
+2021-08-28T11:21:13.2351324+03:00 80000009-0000-fd00-b63f-84710c7967bb [ERR] Connection ID ""18230571293206380552"", Request ID ""80000009-0000-fd00-b63f-84710c7967bb"": An unhandled exception was thrown by the application. (bf316047)
+Core.Middlewares.ErrorHandling.BusinessException: The Year value can not be empty.
+   at Business.Validation.EntityValidator.Validate(Book book) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Business\Validation\EntityValidator.cs:line 29
+   at Business.Concrete.BookManager.AddBook(Book book) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Business\Concrete\BookManager.cs:line 28
+   at WebApi.Controllers.BookController.Add(Book book) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi\Controllers\BookController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Core.Middlewares.GlobalErrorHandlingMiddleware.Invoke(HttpContext context) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Core\Middlewares\ErrorHandling\GlobalErrorHandlingMiddleware.cs:line 26
+   at Core.Middlewares.GlobalErrorHandlingMiddleware.Invoke(HttpContext context) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Core\Middlewares\ErrorHandling\GlobalErrorHandlingMiddleware.cs:line 52
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2021-08-28T11:21:32.6460665+03:00 8000000e-0003-ff00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Core.Middlewares.ErrorHandling.BusinessException: The Year value can not be empty.
+   at Business.Validation.EntityValidator.Validate(Book book) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Business\Validation\EntityValidator.cs:line 29
+   at Business.Concrete.BookManager.AddBook(Book book) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Business\Concrete\BookManager.cs:line 28
+   at WebApi.Controllers.BookController.Add(Book book) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi\Controllers\BookController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Core.Middlewares.GlobalErrorHandlingMiddleware.Invoke(HttpContext context) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Core\Middlewares\ErrorHandling\GlobalErrorHandlingMiddleware.cs:line 26
+   at Core.Middlewares.GlobalErrorHandlingMiddleware.Invoke(HttpContext context) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Core\Middlewares\ErrorHandling\GlobalErrorHandlingMiddleware.cs:line 52
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-08-28T11:21:32.6500789+03:00 8000000e-0003-ff00-b63f-84710c7967bb [WRN] The response has already started, the error page middleware will not be executed. (e1dd4c0d)
+2021-08-28T11:21:32.6564711+03:00 8000000e-0003-ff00-b63f-84710c7967bb [ERR] Connection ID ""18374686494167138317"", Request ID ""8000000e-0003-ff00-b63f-84710c7967bb"": An unhandled exception was thrown by the application. (bf316047)
+Core.Middlewares.ErrorHandling.BusinessException: The Year value can not be empty.
+   at Business.Validation.EntityValidator.Validate(Book book) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Business\Validation\EntityValidator.cs:line 29
+   at Business.Concrete.BookManager.AddBook(Book book) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Business\Concrete\BookManager.cs:line 28
+   at WebApi.Controllers.BookController.Add(Book book) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi\Controllers\BookController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Core.Middlewares.GlobalErrorHandlingMiddleware.Invoke(HttpContext context) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Core\Middlewares\ErrorHandling\GlobalErrorHandlingMiddleware.cs:line 26
+   at Core.Middlewares.GlobalErrorHandlingMiddleware.Invoke(HttpContext context) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Core\Middlewares\ErrorHandling\GlobalErrorHandlingMiddleware.cs:line 52
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2021-08-28T11:21:56.7992868+03:00 80000013-0001-ff00-b63f-84710c7967bb [INF] Books has been listed. (07aaa574)
+2021-08-28T11:22:19.9789845+03:00 80000014-0001-ff00-b63f-84710c7967bb [INF] The book (Rose Elliot's vegetarian four seasons: A cook's calendar of delicious recipes) has been deleted. (52138875)
+2021-08-28T11:22:36.1640556+03:00 80000015-0001-ff00-b63f-84710c7967bb [INF] The book (Rose Elliot's vegetarian four seasons: A cook's calendar of delicious recipes) has been added. (2c731609)
+2021-08-28T11:23:39.4454893+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-08-28T11:23:39.4618899+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-08-28T11:23:39.4873806+03:00  [INF] Content root path: "C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi" (b5d60022)
+2021-08-28T11:23:44.4467596+03:00 80000017-0001-ff00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Core.Middlewares.ErrorHandling.BusinessException: The ISBN value can not be empty.
+   at Business.Validation.EntityValidator.Validate(Book book) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Business\Validation\EntityValidator.cs:line 17
+   at Business.Concrete.BookManager.AddBook(Book book) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Business\Concrete\BookManager.cs:line 28
+   at WebApi.Controllers.BookController.Add(Book book) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi\Controllers\BookController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Core.Middlewares.GlobalErrorHandlingMiddleware.Invoke(HttpContext context) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Core\Middlewares\ErrorHandling\GlobalErrorHandlingMiddleware.cs:line 26
+   at Core.Middlewares.GlobalErrorHandlingMiddleware.Invoke(HttpContext context) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Core\Middlewares\ErrorHandling\GlobalErrorHandlingMiddleware.cs:line 52
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-08-28T11:23:44.4512496+03:00 80000017-0001-ff00-b63f-84710c7967bb [WRN] The response has already started, the error page middleware will not be executed. (e1dd4c0d)
+2021-08-28T11:23:44.4710863+03:00 80000017-0001-ff00-b63f-84710c7967bb [ERR] Connection ID ""18374686485577203734"", Request ID ""80000017-0001-ff00-b63f-84710c7967bb"": An unhandled exception was thrown by the application. (bf316047)
+Core.Middlewares.ErrorHandling.BusinessException: The ISBN value can not be empty.
+   at Business.Validation.EntityValidator.Validate(Book book) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Business\Validation\EntityValidator.cs:line 17
+   at Business.Concrete.BookManager.AddBook(Book book) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Business\Concrete\BookManager.cs:line 28
+   at WebApi.Controllers.BookController.Add(Book book) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi\Controllers\BookController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Core.Middlewares.GlobalErrorHandlingMiddleware.Invoke(HttpContext context) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Core\Middlewares\ErrorHandling\GlobalErrorHandlingMiddleware.cs:line 26
+   at Core.Middlewares.GlobalErrorHandlingMiddleware.Invoke(HttpContext context) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Core\Middlewares\ErrorHandling\GlobalErrorHandlingMiddleware.cs:line 52
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2021-08-28T11:23:49.9586584+03:00 8000000e-0000-fe00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Core.Middlewares.ErrorHandling.BusinessException: The ISBN value can not be empty.
+   at Business.Validation.EntityValidator.Validate(Book book) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Business\Validation\EntityValidator.cs:line 17
+   at Business.Concrete.BookManager.AddBook(Book book) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Business\Concrete\BookManager.cs:line 28
+   at WebApi.Controllers.BookController.Add(Book book) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi\Controllers\BookController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Core.Middlewares.GlobalErrorHandlingMiddleware.Invoke(HttpContext context) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Core\Middlewares\ErrorHandling\GlobalErrorHandlingMiddleware.cs:line 26
+   at Core.Middlewares.GlobalErrorHandlingMiddleware.Invoke(HttpContext context) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Core\Middlewares\ErrorHandling\GlobalErrorHandlingMiddleware.cs:line 52
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-08-28T11:23:49.9610737+03:00 8000000e-0000-fe00-b63f-84710c7967bb [WRN] The response has already started, the error page middleware will not be executed. (e1dd4c0d)
+2021-08-28T11:23:49.9679955+03:00 8000000e-0000-fe00-b63f-84710c7967bb [ERR] Connection ID ""18302628887244308493"", Request ID ""8000000e-0000-fe00-b63f-84710c7967bb"": An unhandled exception was thrown by the application. (bf316047)
+Core.Middlewares.ErrorHandling.BusinessException: The ISBN value can not be empty.
+   at Business.Validation.EntityValidator.Validate(Book book) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Business\Validation\EntityValidator.cs:line 17
+   at Business.Concrete.BookManager.AddBook(Book book) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Business\Concrete\BookManager.cs:line 28
+   at WebApi.Controllers.BookController.Add(Book book) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi\Controllers\BookController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Core.Middlewares.GlobalErrorHandlingMiddleware.Invoke(HttpContext context) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Core\Middlewares\ErrorHandling\GlobalErrorHandlingMiddleware.cs:line 26
+   at Core.Middlewares.GlobalErrorHandlingMiddleware.Invoke(HttpContext context) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Core\Middlewares\ErrorHandling\GlobalErrorHandlingMiddleware.cs:line 52
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2021-08-28T11:23:57.4241003+03:00 80000019-0001-ff00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Core.Middlewares.ErrorHandling.BusinessException: The ISBN value can not be empty.
+   at Business.Validation.EntityValidator.Validate(Book book) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Business\Validation\EntityValidator.cs:line 17
+   at Business.Concrete.BookManager.AddBook(Book book) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Business\Concrete\BookManager.cs:line 28
+   at WebApi.Controllers.BookController.Add(Book book) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi\Controllers\BookController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Core.Middlewares.GlobalErrorHandlingMiddleware.Invoke(HttpContext context) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Core\Middlewares\ErrorHandling\GlobalErrorHandlingMiddleware.cs:line 26
+   at Core.Middlewares.GlobalErrorHandlingMiddleware.Invoke(HttpContext context) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Core\Middlewares\ErrorHandling\GlobalErrorHandlingMiddleware.cs:line 52
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-08-28T11:23:57.4285325+03:00 80000019-0001-ff00-b63f-84710c7967bb [WRN] The response has already started, the error page middleware will not be executed. (e1dd4c0d)
+2021-08-28T11:23:57.4368122+03:00 80000019-0001-ff00-b63f-84710c7967bb [ERR] Connection ID ""18374686485577203736"", Request ID ""80000019-0001-ff00-b63f-84710c7967bb"": An unhandled exception was thrown by the application. (bf316047)
+Core.Middlewares.ErrorHandling.BusinessException: The ISBN value can not be empty.
+   at Business.Validation.EntityValidator.Validate(Book book) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Business\Validation\EntityValidator.cs:line 17
+   at Business.Concrete.BookManager.AddBook(Book book) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Business\Concrete\BookManager.cs:line 28
+   at WebApi.Controllers.BookController.Add(Book book) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi\Controllers\BookController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Core.Middlewares.GlobalErrorHandlingMiddleware.Invoke(HttpContext context) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Core\Middlewares\ErrorHandling\GlobalErrorHandlingMiddleware.cs:line 26
+   at Core.Middlewares.GlobalErrorHandlingMiddleware.Invoke(HttpContext context) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Core\Middlewares\ErrorHandling\GlobalErrorHandlingMiddleware.cs:line 52
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2021-08-28T11:24:47.0317096+03:00 8000001b-0001-ff00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Core.Middlewares.ErrorHandling.BusinessException: The ISBN value can not be empty.
+   at Business.Validation.EntityValidator.Validate(Book book) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Business\Validation\EntityValidator.cs:line 17
+   at Business.Concrete.BookManager.AddBook(Book book) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Business\Concrete\BookManager.cs:line 28
+   at WebApi.Controllers.BookController.Add(Book book) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi\Controllers\BookController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Core.Middlewares.GlobalErrorHandlingMiddleware.Invoke(HttpContext context) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Core\Middlewares\ErrorHandling\GlobalErrorHandlingMiddleware.cs:line 26
+   at Core.Middlewares.GlobalErrorHandlingMiddleware.Invoke(HttpContext context) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Core\Middlewares\ErrorHandling\GlobalErrorHandlingMiddleware.cs:line 52
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-08-28T11:24:47.0342168+03:00 8000001b-0001-ff00-b63f-84710c7967bb [WRN] The response has already started, the error page middleware will not be executed. (e1dd4c0d)
+2021-08-28T11:24:47.0422149+03:00 8000001b-0001-ff00-b63f-84710c7967bb [ERR] Connection ID ""18374686485577203738"", Request ID ""8000001b-0001-ff00-b63f-84710c7967bb"": An unhandled exception was thrown by the application. (bf316047)
+Core.Middlewares.ErrorHandling.BusinessException: The ISBN value can not be empty.
+   at Business.Validation.EntityValidator.Validate(Book book) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Business\Validation\EntityValidator.cs:line 17
+   at Business.Concrete.BookManager.AddBook(Book book) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Business\Concrete\BookManager.cs:line 28
+   at WebApi.Controllers.BookController.Add(Book book) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi\Controllers\BookController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Core.Middlewares.GlobalErrorHandlingMiddleware.Invoke(HttpContext context) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Core\Middlewares\ErrorHandling\GlobalErrorHandlingMiddleware.cs:line 26
+   at Core.Middlewares.GlobalErrorHandlingMiddleware.Invoke(HttpContext context) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Core\Middlewares\ErrorHandling\GlobalErrorHandlingMiddleware.cs:line 52
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2021-08-28T11:26:08.4900708+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-08-28T11:26:08.5430399+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-08-28T11:26:08.5455453+03:00  [INF] Content root path: "C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi" (b5d60022)
+2021-08-28T11:26:56.0270541+03:00 80000002-0003-fc00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Core.Middlewares.ErrorHandling.BusinessException: The Name value can not be empty.
+   at Business.Validation.EntityValidator.Validate(Song song) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Business\Validation\EntityValidator.cs:line 42
+   at Business.Concrete.SongManager.addSong(Song song) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Business\Concrete\SongManager.cs:line 32
+   at WebApi.Controllers.SongsController.addSong(Song song) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi\Controllers\SongsController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Core.Middlewares.GlobalErrorHandlingMiddleware.Invoke(HttpContext context) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Core\Middlewares\ErrorHandling\GlobalErrorHandlingMiddleware.cs:line 26
+   at Core.Middlewares.GlobalErrorHandlingMiddleware.Invoke(HttpContext context) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Core\Middlewares\ErrorHandling\GlobalErrorHandlingMiddleware.cs:line 52
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-08-28T11:26:56.0306350+03:00 80000002-0003-fc00-b63f-84710c7967bb [WRN] The response has already started, the error page middleware will not be executed. (e1dd4c0d)
+2021-08-28T11:26:56.0571986+03:00 80000002-0003-fc00-b63f-84710c7967bb [ERR] Connection ID ""18158513712053354497"", Request ID ""80000002-0003-fc00-b63f-84710c7967bb"": An unhandled exception was thrown by the application. (bf316047)
+Core.Middlewares.ErrorHandling.BusinessException: The Name value can not be empty.
+   at Business.Validation.EntityValidator.Validate(Song song) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Business\Validation\EntityValidator.cs:line 42
+   at Business.Concrete.SongManager.addSong(Song song) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Business\Concrete\SongManager.cs:line 32
+   at WebApi.Controllers.SongsController.addSong(Song song) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi\Controllers\SongsController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Core.Middlewares.GlobalErrorHandlingMiddleware.Invoke(HttpContext context) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Core\Middlewares\ErrorHandling\GlobalErrorHandlingMiddleware.cs:line 26
+   at Core.Middlewares.GlobalErrorHandlingMiddleware.Invoke(HttpContext context) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Core\Middlewares\ErrorHandling\GlobalErrorHandlingMiddleware.cs:line 52
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2021-08-28T11:27:42.4621361+03:00 80000004-0003-fc00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Core.Middlewares.ErrorHandling.BusinessException: The Name value can not be empty.
+   at Business.Validation.EntityValidator.Validate(Song song) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Business\Validation\EntityValidator.cs:line 42
+   at Business.Concrete.SongManager.addSong(Song song) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Business\Concrete\SongManager.cs:line 32
+   at WebApi.Controllers.SongsController.addSong(Song song) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi\Controllers\SongsController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Core.Middlewares.GlobalErrorHandlingMiddleware.Invoke(HttpContext context) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Core\Middlewares\ErrorHandling\GlobalErrorHandlingMiddleware.cs:line 26
+   at Core.Middlewares.GlobalErrorHandlingMiddleware.Invoke(HttpContext context) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Core\Middlewares\ErrorHandling\GlobalErrorHandlingMiddleware.cs:line 52
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-08-28T11:27:42.4661685+03:00 80000004-0003-fc00-b63f-84710c7967bb [WRN] The response has already started, the error page middleware will not be executed. (e1dd4c0d)
+2021-08-28T11:27:42.4798848+03:00 80000004-0003-fc00-b63f-84710c7967bb [ERR] Connection ID ""18158513712053354499"", Request ID ""80000004-0003-fc00-b63f-84710c7967bb"": An unhandled exception was thrown by the application. (bf316047)
+Core.Middlewares.ErrorHandling.BusinessException: The Name value can not be empty.
+   at Business.Validation.EntityValidator.Validate(Song song) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Business\Validation\EntityValidator.cs:line 42
+   at Business.Concrete.SongManager.addSong(Song song) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Business\Concrete\SongManager.cs:line 32
+   at WebApi.Controllers.SongsController.addSong(Song song) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi\Controllers\SongsController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Core.Middlewares.GlobalErrorHandlingMiddleware.Invoke(HttpContext context) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Core\Middlewares\ErrorHandling\GlobalErrorHandlingMiddleware.cs:line 26
+   at Core.Middlewares.GlobalErrorHandlingMiddleware.Invoke(HttpContext context) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Core\Middlewares\ErrorHandling\GlobalErrorHandlingMiddleware.cs:line 52
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2021-08-28T11:28:43.8735585+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-08-28T11:28:43.9015317+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-08-28T11:28:43.9049793+03:00  [INF] Content root path: "C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi" (b5d60022)
+2021-08-28T11:29:18.4372601+03:00 80000013-0003-ff00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Core.Middlewares.ErrorHandling.BusinessException: The Name value can not be empty.
+   at Business.Validation.EntityValidator.Validate(Song song) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Business\Validation\EntityValidator.cs:line 42
+   at Business.Concrete.SongManager.addSong(Song song) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Business\Concrete\SongManager.cs:line 32
+   at WebApi.Controllers.SongsController.addSong(Song song) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi\Controllers\SongsController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Core.Middlewares.GlobalErrorHandlingMiddleware.Invoke(HttpContext context) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Core\Middlewares\ErrorHandling\GlobalErrorHandlingMiddleware.cs:line 26
+   at Core.Middlewares.GlobalErrorHandlingMiddleware.Invoke(HttpContext context) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Core\Middlewares\ErrorHandling\GlobalErrorHandlingMiddleware.cs:line 52
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-08-28T11:29:18.4407067+03:00 80000013-0003-ff00-b63f-84710c7967bb [WRN] The response has already started, the error page middleware will not be executed. (e1dd4c0d)
+2021-08-28T11:29:18.4676121+03:00 80000013-0003-ff00-b63f-84710c7967bb [ERR] Connection ID ""18374686494167138322"", Request ID ""80000013-0003-ff00-b63f-84710c7967bb"": An unhandled exception was thrown by the application. (bf316047)
+Core.Middlewares.ErrorHandling.BusinessException: The Name value can not be empty.
+   at Business.Validation.EntityValidator.Validate(Song song) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Business\Validation\EntityValidator.cs:line 42
+   at Business.Concrete.SongManager.addSong(Song song) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Business\Concrete\SongManager.cs:line 32
+   at WebApi.Controllers.SongsController.addSong(Song song) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi\Controllers\SongsController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Core.Middlewares.GlobalErrorHandlingMiddleware.Invoke(HttpContext context) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Core\Middlewares\ErrorHandling\GlobalErrorHandlingMiddleware.cs:line 26
+   at Core.Middlewares.GlobalErrorHandlingMiddleware.Invoke(HttpContext context) in C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Core\Middlewares\ErrorHandling\GlobalErrorHandlingMiddleware.cs:line 52
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2021-08-28T11:32:49.0685015+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-08-28T11:32:49.1105741+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-08-28T11:32:49.1124416+03:00  [INF] Content root path: "C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi" (b5d60022)
+2021-08-28T14:30:16.9860892+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-08-28T14:30:17.0477229+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-08-28T14:30:17.0709123+03:00  [INF] Content root path: "C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi" (b5d60022)
+2021-08-28T14:32:27.5338840+03:00 80000008-0003-fd00-b63f-84710c7967bb [INF] Books has been listed. (07aaa574)
+2021-08-28T14:34:12.2244231+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-08-28T14:34:12.2363625+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-08-28T14:34:12.2379489+03:00  [INF] Content root path: "C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi" (b5d60022)
+2021-08-28T14:36:12.6298502+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-08-28T14:36:12.7037403+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-08-28T14:36:12.7107177+03:00  [INF] Content root path: "C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi" (b5d60022)
+2021-08-28T14:55:01.3586815+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-08-28T14:55:01.3692278+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-08-28T14:55:01.3714051+03:00  [INF] Content root path: "C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi" (b5d60022)
+2021-08-28T14:57:40.1622538+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-08-28T14:57:40.1737066+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-08-28T14:57:40.1755140+03:00  [INF] Content root path: "C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi" (b5d60022)
+2021-08-28T14:59:36.1151741+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-08-28T14:59:36.1283187+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-08-28T14:59:36.1303592+03:00  [INF] Content root path: "C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi" (b5d60022)
+2021-08-28T15:02:16.6648277+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-08-28T15:02:16.6884193+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-08-28T15:02:16.6935148+03:00  [INF] Content root path: "C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi" (b5d60022)
+2021-08-28T15:05:10.9516631+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-08-28T15:05:10.9638205+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-08-28T15:05:10.9661678+03:00  [INF] Content root path: "C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi" (b5d60022)
+2021-08-28T16:16:19.8086054+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-08-28T16:16:19.8343427+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-08-28T16:16:19.8362935+03:00  [INF] Content root path: "C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi" (b5d60022)
+2021-08-28T16:20:03.2153396+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-08-28T16:20:03.2499597+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-08-28T16:20:03.2521495+03:00  [INF] Content root path: "C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi" (b5d60022)
+2021-08-28T16:25:46.9672998+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-08-28T16:25:46.9807559+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-08-28T16:25:46.9827317+03:00  [INF] Content root path: "C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi" (b5d60022)
+2021-08-28T16:28:46.0920888+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-08-28T16:28:46.1048532+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-08-28T16:28:46.1066268+03:00  [INF] Content root path: "C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi" (b5d60022)
+2021-08-28T16:31:45.2901315+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-08-28T16:31:45.3043937+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-08-28T16:31:45.3082150+03:00  [INF] Content root path: "C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi" (b5d60022)
+2021-08-28T16:35:51.8056652+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-08-28T16:35:51.8294796+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-08-28T16:35:51.8327510+03:00  [INF] Content root path: "C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi" (b5d60022)
+2021-08-28T16:38:34.3739582+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-08-28T16:38:34.3845799+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-08-28T16:38:34.3861617+03:00  [INF] Content root path: "C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi" (b5d60022)
+2021-08-28T16:45:33.4350264+03:00 80000020-0001-fe00-b63f-84710c7967bb [INF] Books has been listed. (07aaa574)
+2021-08-28T16:45:38.1387044+03:00 80000021-0001-fe00-b63f-84710c7967bb [INF] Songs has been listed. (c9061f59)
+2021-08-28T16:55:18.2986515+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-08-28T16:55:18.3164288+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-08-28T16:55:18.3186095+03:00  [INF] Content root path: "C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi" (b5d60022)
+2021-08-28T17:05:07.4296533+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-08-28T17:05:07.4407769+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-08-28T17:05:07.4427735+03:00  [INF] Content root path: "C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi" (b5d60022)
+2021-08-28T17:06:07.3077427+03:00 8000001c-0003-fd00-b63f-84710c7967bb [INF] Books has been listed. (07aaa574)
+2021-08-28T17:47:15.7076565+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-08-28T17:47:15.7176845+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-08-28T17:47:15.7193862+03:00  [INF] Content root path: "C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi" (b5d60022)
+2021-08-28T21:01:14.4793300+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-08-28T21:01:14.5054355+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-08-28T21:01:14.5093541+03:00  [INF] Content root path: "C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi" (b5d60022)
+2021-08-28T21:05:31.6339784+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-08-28T21:05:31.6508942+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-08-28T21:05:31.6555609+03:00  [INF] Content root path: "C:\Users\CASPER\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi" (b5d60022)

@@ -1,0 +1,17 @@
+﻿using Core.DataAccess.Abstract;
+using Core.Utilities.Pagtination;
+using Entities.Concrete;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DataAccess.Abstract
+{
+    public interface ISongDal: IRepositoryBase<Song>
+    {
+        Task<List<Song>> GetListWithPagination(PaginationFilter paginationFilter);
+        Task<Song> GetRandomSong();
+    }
+}

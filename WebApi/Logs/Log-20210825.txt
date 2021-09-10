@@ -1,0 +1,166 @@
+2021-08-25T13:48:29.8356872+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-08-25T13:48:29.8612113+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-08-25T13:48:29.8633500+03:00  [INF] Content root path: "C:\Users\reali\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi" (b5d60022)
+2021-08-25T13:48:54.1735539+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-08-25T13:48:54.1863624+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-08-25T13:48:54.1882788+03:00  [INF] Content root path: "C:\Users\reali\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi" (b5d60022)
+2021-08-25T13:49:48.1387749+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-08-25T13:49:48.1502555+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-08-25T13:49:48.1522116+03:00  [INF] Content root path: "C:\Users\reali\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi" (b5d60022)
+2021-08-25T18:52:33.8909304+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-08-25T18:52:33.9166333+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-08-25T18:52:33.9202724+03:00  [INF] Content root path: "C:\Users\reali\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi" (b5d60022)
+2021-08-25T18:54:18.5318905+03:00 80000002-0001-fd00-b63f-84710c7967bb [INF] The book (Monk's-hood) has been listed. (806f1eaa)
+2021-08-25T19:10:05.0826122+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-08-25T19:10:05.1020854+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-08-25T19:10:05.1040997+03:00  [INF] Content root path: "C:\Users\reali\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi" (b5d60022)
+2021-08-25T20:14:37.2535400+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-08-25T20:14:37.2671875+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-08-25T20:14:37.2692932+03:00  [INF] Content root path: "C:\Users\reali\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi" (b5d60022)
+2021-08-25T20:15:13.7521437+03:00 80000002-0000-ff00-b63f-84710c7967bb [INF] The author (Ellis Peters) of books  has been listed. (66f1718a)
+2021-08-25T20:28:41.6497307+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-08-25T20:28:41.6638522+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-08-25T20:28:41.6660311+03:00  [INF] Content root path: "C:\Users\reali\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi" (b5d60022)
+2021-08-25T20:45:08.6596098+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-08-25T20:45:08.6716342+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-08-25T20:45:08.6737431+03:00  [INF] Content root path: "C:\Users\reali\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi" (b5d60022)
+2021-08-25T20:45:40.8920833+03:00 80000005-0002-ff00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'BookAuthor', table 'ActivityRecomenderDb.dbo.Books'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:297682cf-eeb8-404e-b4c3-622e7595f090
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Core.DataAccess.Concrete.EntityFramework.EfEntityRepositoryBase`2.add(TEntity entity) in C:\Users\reali\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Core\DataAccess\Concrete\EntityFramework\EfEntityRepositoryBase.cs:line 23
+   at Business.Concrete.BookManager.AddBook(Book book) in C:\Users\reali\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Business\Concrete\BookManager.cs:line 25
+   at WebApi.Controllers.BookController.Add(Book book) in C:\Users\reali\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi\Controllers\BookController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-08-25T20:46:26.6414648+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-08-25T20:46:26.6547604+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-08-25T20:46:26.6568635+03:00  [INF] Content root path: "C:\Users\reali\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi" (b5d60022)
+2021-08-25T20:46:34.0120214+03:00 80000006-0003-ff00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'BookAuthor', table 'ActivityRecomenderDb.dbo.Books'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:6a1604cd-199a-4a73-a41f-0d33d3f76910
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Core.DataAccess.Concrete.EntityFramework.EfEntityRepositoryBase`2.add(TEntity entity) in C:\Users\reali\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Core\DataAccess\Concrete\EntityFramework\EfEntityRepositoryBase.cs:line 23
+   at Business.Concrete.BookManager.AddBook(Book book) in C:\Users\reali\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Business\Concrete\BookManager.cs:line 25
+   at WebApi.Controllers.BookController.Add(Book book) in C:\Users\reali\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi\Controllers\BookController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Core.Middlewares.GlobalErrorHandlingMiddleware.Invoke(HttpContext context) in C:\Users\reali\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Core\Middlewares\ErrorHandling\GlobalErrorHandlingMiddleware.cs:line 26
+   at Core.Middlewares.GlobalErrorHandlingMiddleware.Invoke(HttpContext context) in C:\Users\reali\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Core\Middlewares\ErrorHandling\GlobalErrorHandlingMiddleware.cs:line 52
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-08-25T20:46:34.0175665+03:00 80000006-0003-ff00-b63f-84710c7967bb [WRN] The response has already started, the error page middleware will not be executed. (e1dd4c0d)
+2021-08-25T20:46:34.0437308+03:00 80000006-0003-ff00-b63f-84710c7967bb [ERR] Connection ID ""18374686494167138309"", Request ID ""80000006-0003-ff00-b63f-84710c7967bb"": An unhandled exception was thrown by the application. (bf316047)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'BookAuthor', table 'ActivityRecomenderDb.dbo.Books'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:6a1604cd-199a-4a73-a41f-0d33d3f76910
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Core.DataAccess.Concrete.EntityFramework.EfEntityRepositoryBase`2.add(TEntity entity) in C:\Users\reali\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Core\DataAccess\Concrete\EntityFramework\EfEntityRepositoryBase.cs:line 23
+   at Business.Concrete.BookManager.AddBook(Book book) in C:\Users\reali\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Business\Concrete\BookManager.cs:line 25
+   at WebApi.Controllers.BookController.Add(Book book) in C:\Users\reali\Desktop\Enes\ActiviyRecomender\ActivityRecomender\WebApi\Controllers\BookController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Core.Middlewares.GlobalErrorHandlingMiddleware.Invoke(HttpContext context) in C:\Users\reali\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Core\Middlewares\ErrorHandling\GlobalErrorHandlingMiddleware.cs:line 26
+   at Core.Middlewares.GlobalErrorHandlingMiddleware.Invoke(HttpContext context) in C:\Users\reali\Desktop\Enes\ActiviyRecomender\ActivityRecomender\Core\Middlewares\ErrorHandling\GlobalErrorHandlingMiddleware.cs:line 52
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
